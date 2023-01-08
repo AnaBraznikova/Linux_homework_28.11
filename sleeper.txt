@@ -1,0 +1,42 @@
+#!/bin/bash
+
+echo “it works!“
+
+
+for run in  {1..10}
+do  date +"%H:%M:%S"
+ echo ps -ef | grep -v / | wc -l
+#sleep 5
+done
+
+
+
+cat /etc/os-release | head -1 | grep -w Amazon | sed 's/NAME=/ /g' | sed 's/Linux/ /g' | sed 's/"/ /g'
+
+
+
+x=50
+
+while [[ $x -lt 101 ]]
+do
+touch  "$x.txt"
+x=$(( $x +1 ))
+done
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
